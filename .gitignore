@@ -1,0 +1,10 @@
+.cache/
+.cache/*
+.cache/*/*
+dist/
+dist/*
+dist/*/*
+dist/index.html
+.cache/30/50cae3ce17a4ee037857257c4db52f.json
+node_modules/
+.DS_Store

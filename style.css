@@ -1,0 +1,139 @@
+@import url("./fonts/webfontkit-clairehand/stylesheet.css");
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "claire_handregular", sans-serif;
+  color: #111;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  background: url("./images/blue-snow.png");
+  background-attachment: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgb(42, 42, 42);
+  --primary: #ff5f82;
+  --light-text: #fdfffc;
+  --dark-text: #011627;
+  --green: #2ec4b6;
+  --red: #e71d36;
+  --orange: #ff9f1c;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+
+header,
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header,
+section {
+  width: 82%;
+  background: rgba(255, 255, 255, 0.493);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  box-shadow: 0px 5px 15px -5px rgba(69, 119, 255, 0.418);
+}
+
+@media only screen and (min-width: 600px) {
+  header,
+  section {
+    width: 45%;
+  }
+}
+
+section {
+  text-align: center;
+}
+
+p {
+  margin: 0.5rem;
+  text-align: start;
+  color: rgb(42, 42, 42);
+  text-indent: 0.5rem;
+}
+
+p::before {
+  content: attr(emoji);
+}
+
+details {
+  margin: 0 1rem;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+summary {
+  font-size: 1.3rem;
+}
+
+.badge {
+  background: var(--green);
+  color: var(--light-text);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.horiz-ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  line-height: 2rem;
+}
+
+.horiz-ul li {
+  margin: 0 0.1rem;
+}
+
+.green-bg {
+  background: var(--green);
+}
+
+.red-bg {
+  background: var(--red);
+}
+
+.orange-bg {
+  background: var(--orange);
+}
+
+.badge:visited {
+  text-decoration: none;
+}
+
+.large-text {
+  font-size: 1.2rem;
+}
+
+#map {
+  height: 20rem;
+}
